@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>流水线CPU使用说明</title>
+	<meta charset="utf-8">
+	<style>
+		.all{
+			margin: 0 auto;
+		}
+		table{
+			border: 1px solid black;
+		}
+		td{
+			border:1px solid black;
+		}
+		th{
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<h1>流水线CPU</h1>
+		<p>这是一个使用verilog语言实现的流水线CPU，可以执行36条的指令。</p>
+
+		<h1>运行环境</h1>
+			modelsim10.5b <br>
+			Windows 10
+					<h1>文件说明</h1>
+			<table>
+			  <tr>
+				<th>文件名</th>
+				<th>说明</th>
+			  </tr>
+			  <tr>
+				<td>IFIDReg.v</td>
+				<td>流水段寄存器</td>
+			  </tr>
+			  <tr>
+				<td>IDEDReg.v</td>
+				<td>流水段寄存器</td>
+			  </tr>
+			  <tr>
+				<td>EXMEMReg.v</td>
+				<td>流水段寄存器</td>
+			  </tr>
+			 <tr>
+				<td>MEMWrReg.v</td>
+				<td>流水段寄存器</td>
+			  </tr>
+			 <tr>
+				<td>ALU</td>
+				<td>运算模块.v</td>
+			  </tr>
+			 <tr>
+				<td>ctrl.v</td>
+				<td>生成控制信号</td>
+			  </tr>
+			 <tr>
+				<td>dm.v</td>
+				<td>主存</td>
+			  </tr>
+			 <tr>
+				<td>EXT.v</td>
+				<td>位扩展模块</td>
+			  </tr>
+			 <tr>
+				<td>im.v</td>
+				<td>指令存储器</td>
+			  </tr>
+			 <tr>
+				<td>MUX21.v</td>
+				<td>二选一数据选择器</td>
+			  </tr>
+			<tr>
+				<td>MUX31.v</td>
+				<td>三选一数据选择器</td>
+			  </tr>
+			<tr>
+				<td>MUX41.v</td>
+				<td>四选一数据选择器</td>
+			  </tr>
+			<tr>
+				<td>PC.v</td>
+				<td>计算并给出下一条指令地址</td>
+			  </tr>
+			<tr>
+				<td>RegFile.v</td>
+				<td>寄存器堆</td>
+			  </tr>
+			<tr>
+				<td>pipeline_cpu.v</td>
+				<td>连接数据通路</td>
+			  </tr>
+			<tr>
+				<td>top.v</td>
+				<td>顶层模块</td>
+			  </tr>
+			<tr>
+				<td>forwading.v</td>
+				<td>处理数据冒险，转发数据</td>
+			 </tr>
+			<tr>
+				<td>load_use.v</td>
+				<td>检测load_use冒险并阻塞一个周期</td>
+			 </tr>
+			<tr>
+				<td>control_hazar.v</td>
+				<td>处理控制冒险</td>
+			  </tr>
+			<tr>
+				<td>predict.v</td>
+				<td>动态预测是否跳转</td>
+			  </tr>
+			</table>
+
+
+
+
+		<h1>使用方法</h1>
+		1.打开modelsim软件，创建一个新的工程，将所有的文件添加到工程中。<br>
+		2.编译所有的文件，运行top.v作为顶层模块。<br>
+		3.运行仿真，观察波形图和打印信息，检查CPU是否正确执行了指令。<br>
+		4.检查分支动态预测是否正确处理预测错误后的措施。<br>
+		
+		<h1> 红线说明 </h1>
+		由于流水线特殊性质，一些信号在某些情况下会出现红线，例如：<br>
+		开始执行时一些流水段寄存器里面指令本就为空，故出现红线。<br>
+		程序处理控制冒险后清空了流水段寄存器，里面的信号会变为红线。<br><br><br>
+	</div>
+</body>
+</html>
+

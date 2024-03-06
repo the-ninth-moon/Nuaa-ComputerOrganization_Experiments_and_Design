@@ -1,0 +1,194 @@
+PC:00003000
+instruction:24010001
+
+PC:00003004
+instruction:00011100
+RegFile: write 00000010 in  2
+
+PC:00003008
+instruction:00411821
+RegFile: write 00000011 in  3
+
+PC:0000300c
+instruction:00022082
+RegFile: write 00000004 in  4
+
+PC:00003010
+instruction:28990005
+RegFile: write 00000001 in 25
+
+PC:00003014
+instruction:07210010
+
+PC:00003054
+instruction:3c0c000c
+RegFile: write 000c0000 in 12
+
+PC:00003058
+instruction:004cd007
+RegFile: write 0000000c in 26
+
+PC:0000305c
+instruction:003ad804
+RegFile: write 00000018 in 27
+
+PC:00003060
+instruction:0360f809
+RegFile: write 00003064 in 31
+
+PC:00003018
+instruction:00642823
+RegFile: write 0000000d in  5
+
+PC:0000301c
+instruction:ac050014
+ROM: 0000000d write in 00000014
+
+PC:00003020
+instruction:00a23027
+RegFile: write ffffffe2 in  6
+
+PC:00003024
+instruction:00c33825
+RegFile: write fffffff3 in  7
+
+PC:00003028
+instruction:00e64026
+RegFile: write 00000011 in  8
+
+PC:0000302c
+instruction:ac08001c
+ROM: 00000011 write in 0000001c
+
+PC:00003030
+instruction:11030002
+
+PC:00003038
+instruction:24010008
+RegFile: write 00000008 in  1
+
+PC:0000303c
+instruction:8c2a0014
+RegFile: write 00000011 in 10
+
+PC:00003040
+instruction:15450004
+
+PC:00003050
+instruction:0c000019
+RegFile: write 00003054 in 31
+
+PC:00003064
+instruction:a07a0005
+ROM: 0000000c write in 00000016
+
+PC:00003068
+instruction:0063682b
+RegFile: write 00000000 in 13
+
+PC:0000306c
+instruction:1da00003
+
+PC:00003070
+instruction:00867004
+RegFile: write fffffe20 in 14
+
+PC:00003074
+instruction:000e7883
+RegFile: write ffffff88 in 15
+
+PC:00003078
+instruction:002f8006
+RegFile: write 00ffffff in 16
+
+PC:0000307c
+instruction:1a000008
+
+PC:00003080
+instruction:002f8007
+RegFile: write ffffffff in 16
+
+PC:00003084
+instruction:240b008c
+RegFile: write 0000008c in 11
+
+PC:00003088
+instruction:06000006
+
+PC:000030a0
+instruction:2df8ffff
+RegFile: write 00000001 in 24
+
+PC:000030a4
+instruction:0185e825
+RegFile: write 000c000d in 29
+
+PC:000030a8
+instruction:01600008
+RegFile: write 00000000 in  0
+
+PC:0000308c
+instruction:8d5c0003
+RegFile: write 000c000d in 28
+
+PC:00003090
+instruction:179d0007
+
+PC:00003094
+instruction:a0af0008
+ROM: ffffff88 write in 00000015
+
+PC:00003098
+instruction:80b20008
+RegFile: write ffffff88 in 18
+
+PC:0000309c
+instruction:90b30008
+RegFile: write 00000088 in 19
+
+PC:000030a0
+instruction:2df8ffff
+RegFile: write 00000001 in 24
+
+PC:000030a4
+instruction:0185e825
+RegFile: write 000c000d in 29
+
+PC:000030a8
+instruction:01600008
+RegFile: write 00000000 in  0
+
+PC:0000308c
+instruction:8d5c0003
+RegFile: write 000c880d in 28
+
+PC:00003090
+instruction:179d0007
+
+PC:000030ac
+instruction:31f4ffff
+RegFile: write 0000ff88 in 20
+
+PC:000030b0
+instruction:35f5ffff
+RegFile: write ffffffff in 21
+
+PC:000030b4
+instruction:39f6ffff
+RegFile: write ffff0077 in 22
+
+PC:000030b8
+instruction:08000000
+
+PC:00003000
+instruction:24010001
+RegFile: write 00000001 in  1
+
+PC:00003004
+instruction:00011100
+RegFile: write 00000010 in  2
+
+PC:00003008
+instruction:00411821
+RegFile: write 00000011 in  3
+

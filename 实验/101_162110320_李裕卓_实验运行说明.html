@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>单周期CPU使用说明</title>
+	<meta charset="utf-8">
+	<style>
+		.all{
+			margin: 0 auto;
+		}
+		table{
+			border: 1px solid black;
+		}
+		td{
+			border:1px solid black;
+		}
+		th{
+			border:1px solid black;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="all">
+		<h1>单周期CPU</h1>
+		<p>这是一个使用verilog语言实现的单周期CPU，可以执行36条的指令。</p>
+
+		<h1>运行环境</h1>
+			modelsim10.5b <br>
+			Windows 10
+		<h1>运行环境</h1>
+			modelsim10.5b <br>
+			Windows 10
+			<h1>文件说明</h1>
+			<table>
+			  <tr>
+				<th>文件名</th>
+				<th>说明</th>
+			  </tr>
+			<tr>
+				<td>ALU</td>
+				<td>运算模块.v</td>
+			  </tr>
+			 <tr>
+				<td>ctrl.v</td>
+				<td>生成控制信号</td>
+			  </tr>
+			 <tr>
+				<td>dm.v</td>
+				<td>主存</td>
+			  </tr>
+			 <tr>
+				<td>EXT.v</td>
+				<td>位扩展模块</td>
+			  </tr>
+			 <tr>
+				<td>im.v</td>
+				<td>指令存储器</td>
+			  </tr>
+			 <tr>
+				<td>MUX21.v</td>
+				<td>二选一数据选择器</td>
+			  </tr>
+			<tr>
+				<td>PC.v</td>
+				<td>计算并给出下一条指令地址</td>
+			  </tr>
+			<tr>
+				<td>RegFile.v</td>
+				<td>寄存器堆</td>
+			  </tr>
+			<tr>
+				<td>cpu.v</td>
+				<td>连接数据通路</td>
+			  </tr>
+			<tr>
+				<td>mips.v</td>
+				<td>连接cpu,dm,im</td>
+			  </tr>
+		
+			<tr>
+				<td>top.v</td>
+				<td>顶层模块,用于测试</td>
+			  </tr>
+		</table>
+
+
+		<h1>使用方法</h1>
+		1.打开modelsim软件，创建一个新的工程，将所有的文件添加到工程中。<br>
+		2.编译所有的文件，运行top.v作为顶层模块。<br>
+		3.运行仿真，观察波形图和打印信息，检查CPU是否正确执行了指令。<br><br><br>
+	</div>
+</body>
+</html>
+
